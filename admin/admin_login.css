@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+
+  .btn-div{
+    height: 28px;
+    width: 70px;
+    text-align: right;
+    cursor: pointer;
+  }
+
+
+  .submit-btn{
+    color: white;
+    background-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif, Courier, monospace;
+    border: none;
+    text-align: center;
+    height: 28px;
+    width: 70px;
+    border-radius: 4px;
+    border-bottom: 4px solid #1e97fa;
+    cursor: pointer;
+    animation: border-anm;
+    animation-duration: 2.0s;
+    animation-iteration-count: infinite;
+    transition: background-color 0.3s ; /* Add a smooth transition effect */
+  }
+
+  @keyframes border-anm{
+    0%{
+      border-color: #46b8ff;
+      
+    }
+    40%{
+      border-color: #46b8ff;
+      
+    }
+    50%{
+      
+      border-color: #30d985;
+
+    }
+    100%{
+      border-color: #04ff00;
+
+    }
+  }
+  .submit-btn:hover{
+background-color: #09b717 ;
+border: none;
+transition: ease-in-out 0.8s;
+  }

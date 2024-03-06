@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charsset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Laundary</title>
+    <!-- Linking header CSS file -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="caurosel.css">
+    <link rel="stylesheet" type="text/css" href="account_page.css">
+    <script src="change_address.js"></script>
+    <script src="change_password.js"></script>
+    <script src="change_email.js"></script>
+    <script src="change_username.js"></script>
+
+</head>
+<body>
+
+    <div class="full_body">
+   <div class="header">
+      <div class="logo">
+         <img class="logo" src="media/logo1.png">
+      </div>
+
+      <div class="navigation">
+
+         <div class="option">
+           <a href="index.html">LogOut</a>
+         </div>
+         <div class="option">
+           <a href="home.html">Back</a>
+         </div>
+         
+
+      </div><!--Navigation menu ends here-->
+   </div><!--End of header div-->
+    
+
+      <div class="user_actions_body">
+        <div class="user_options">
+         <a href="change_username.html"class="user_option_btn">Change Username</a>
+         <a href="change_email.html"class="user_option_btn">Change Email</a>
+         <a href="change_password.html"class="user_option_btn">Change Password</a>
+         <a href="change_address.html"class="user_option_btn">Change Adress</a>
+         <a style="background-color: #fa591f;" 
+         href="delete_account.html" class="delete_account_btn" 
+         onmouseover="this.style.backgroundColor='#b60c0c';"
+          onmouseout="this.style.backgroundColor='#fa591f';">Delete Account
+         </a>
+      </div>
+
+        <div class="user_info_section">
+         <div class="user_info_container">
+            <p> <!-- This is where the user information will be displayed -->
+               <h2>User Details</h2>
+               <p> Name:<?php echo $user_data['name']; ?></p>
+               <p> User Id:<?php echo $user_data['id']; ?></p>
+               <p >Phone: <?php echo $user_data['phone']; ?></p>
+               <p >Email: <?php echo $user_data['email']; ?></p>
+               <p >Address: <?php echo $user_data['address']; ?></p>
+            </p>
+
+         </div>
+        </div>
+        
+
+      </div>
+
+      <div class="footer">
+         <p class="copyright"> © Copyright</p> 
+      </div>
+    </div>
+
+
+
+      <script src="caurosel.js"></script>
+   </body>
+
+</html>

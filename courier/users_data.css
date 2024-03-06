@@ -1,0 +1,96 @@
+.main-background {
+    background-image: linear-gradient(to bottom right, #e2eff5, #80b3ff);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c8103; /* Main background color */
+  }
+  
+  .data-field {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    width: 90%;
+    min-height: 90%;
+    height: auto;
+    background-color: rgb(202, 249, 212); /* Data field background color */
+    border: 1px solid white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .end{
+    height: 120px;
+  }
+  /* Your other styles go here */
+  
+.heading{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  margin-bottom: 10%;
+  /* background-color: #0c8103; */
+}
+
+.heading-note {
+  margin-top: 20px;
+  color: crimson;
+  font-weight:bold ;
+  font-family: 'Playfair Display', serif;
+
+
+}
+th{
+    background-color: #b1b4b1;
+    border:2 px solid #0c8103;
+    padding: 10px; /* Header cell padding */
+    text-align: center; /* Center header text */
+    height: 20px;
+    width: 180px;
+}
+td{
+    background-color: #fafffa;
+    text-align: center;
+    height: fit-content;
+    width: 180px;
+}
+/* .placeholder_input {
+  background-color: white;
+  border-radius: 5px;
+  border: 1.5px solid rgb(4, 174, 253);
+  margin-top: 20px;
+  height: 30px;
+}
+.placeholder_input:hover {
+  border: 1.5px solid rgb(0, 255, 38);
+  height: 34px;
+  transition: height 0.3s ease;
+}
+
+.confirm_btn {
+  background-color: #ef2709;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: small;
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.confirm_btn:hover {
+  background-color: #b30404;
+  transition: background-color 0.3s ease-out;
+}
+
+.btn_container {
+  display: flex; /* Use flexbox to align elements horizontally */
+  /* justify-content: space-between; Spread the elements to the start and end of the container */
+/* } */ 

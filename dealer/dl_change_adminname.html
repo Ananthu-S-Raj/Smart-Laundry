@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Laundary</title>
+    <!-- Linking header CSS file -->
+    <link rel="stylesheet" type="text/css" href="dl_index.css">
+    <link rel="stylesheet" type="text/css" href="caurosel.css">
+    <link rel="stylesheet" type="text/css" href="dl_settings.css">
+   </head>
+
+<body>
+<div>
+   <div class="header">
+      <div class="logo">
+         <img class="logo" src="media/logo1.png">
+      </div>
+
+      <div class="navigation">
+
+         <div class="option">
+           <a href="dl_info.php">Back</a>
+         </div>
+
+
+      </div><!--Navigation menu ends here-->
+   </div><!--End of header div-->
+   <div class="field_background">
+    <div class="form_field">
+        <form action="dl_change_adminname.php" method="POST" onsubmit="return dlname_error();">
+            <div class="heading" >
+                <label class="heading_note">Change Admin Name</label>
+            </div>
+            <input class="placeholder_input" id="new_dlname" name="new_dlname" type="text" placeholder="Enter new admin name" required autocomplete="off"><br>
+            <input class="placeholder_input" id="confirm_dlname" name="confirm_dlname" type="text" placeholder="Confirm admin name" required autocomplete="off"><br>
+            <input class="placeholder_input" id="form_password" name="form_password" type="password" placeholder="Enter Password" required autocomplete="off"><br><br><br>
+            <div class="btn_container">
+
+                <input class="cancel_btn" type="button" value="Cancel" onclick="back()">
+                <input class="confirm_btn" type="submit" value="Confirm">
+            </div>
+            
+        </form>
+       
+
+    </div>
+   </div>
+      <div class="footer">
+         <p class="copyright">© Copyright</p> 
+      </div>
+
+    </div>
+
+    <script src="dl_change_adminname.js"></script>
+
+      <script src="caurosel.js"></script>
+   </body>
+
+</html>

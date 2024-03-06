@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+.sub-container {
+    width: inherit;
+    height: fit-content;
+    margin-top: -65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 120%;    
+    height: fit-content;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Creates a grid with 3 columns of equal width */
+    grid-gap: 20px;
+    flex: 1;
+}
+
+.video {
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.video-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.details {
+    margin-top: 35px;
+    text-align: left;
+    width: 300px;
+}
+.right{
+    height: 240px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    margin-left: -35px
+}
+.right:hover{
+    transform: scale(1.04);
+    transition: ease .5s;
+    box-shadow: 0px 0px 14px  white;
+}
+.booking-heading{
+    color: #1640D6;
+    font-family: 'Lexend', sans-serif;
+   margin-top: -10px;
+}
+.information{
+    font-family: 'Lexend', sans-serif;
+
+}
+#confirm-order-btn{
+    margin-top: 20px;
+    color: white;
+    background-color: #0F0;
+    cursor: pointer;
+    border: 1.5px solid white;
+    height: 28px;
+    width: 104px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+#confirm-order-btn:hover{
+    transform: scale(1.05);
+    transition: ease .5s;
+
+}

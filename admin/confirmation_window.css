@@ -1,0 +1,61 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(248, 111, 111);
+    border-radius: 10px;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+#deletion{
+    color: orange;
+    position: 50%;
+}
+.modal b{
+    color: red;
+}
+.modal p{
+    color: orangered;
+}
+.yes-btn,.no-btn{
+    color: white;
+    width: 55px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 25px;
+}
+.yes-btn{
+   background-color: red;
+
+}
+.no-btn{
+    background-color: rgb(14, 205, 14);
+       margin-left: 30px;
+
+}
+.yes-btn:hover{
+   background-color: rgb(214, 30, 30);
+
+}
+.no-btn:hover{
+    background-color: rgb(30, 160, 30);
+
+} 

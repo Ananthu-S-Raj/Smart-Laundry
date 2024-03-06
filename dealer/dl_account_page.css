@@ -1,0 +1,76 @@
+
+.user_actions_body{
+    background-color: #CDF5FD;
+    /* background-color: rgb(225, 155, 64); */
+    display: flex;
+     width: 100%;
+    height: fit-content;
+}
+.user_options{
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    gap:20px ;
+    background-color: no;
+}
+.user_option_btn{
+    background-color: green;
+    color: white;
+    display: block;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.delete_account_btn{
+    background-color: #fa591f;
+    color: white;
+    display: block;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.user_option_btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+.delete_account_btn:hover {
+    background-color: rgb(182, 12, 12); /* Change background color on hover */
+}
+.user_info_section{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: rgb(155, 17, 30);
+    background-color: #CDF5FD;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+     align-items: center;  /* Vertical centering*/ 
+} 
+.user_info_container{
+    width: 80%;
+    height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #abdaf1;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}

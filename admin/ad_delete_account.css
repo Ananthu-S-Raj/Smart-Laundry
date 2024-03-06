@@ -1,0 +1,92 @@
+.field_background{
+    background-image:linear-gradient(to bottom right,#e2eff5,#80B3FF);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.form_field{
+margin-top: -100px;
+ width: 320px;
+ height:300px;
+ background-color: rgb(202, 249, 212);
+ border: solid white;
+ border-radius: 7px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.heading{
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   margin-left: 12%;
+   margin-top: 5%;
+   margin-bottom: 10%;
+}
+
+.heading_note{
+    margin-top:20px;
+    color: crimson;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.placeholder_input{
+    background-color: white;
+    border-radius: 5px;
+    border: 1.5px solid rgb(4, 174, 253);
+    margin-top: 20px;
+    height: 30px;
+    
+}
+.placeholder_input:hover{
+    border: 1.5px solid rgb(0, 255, 38);
+    height: 34px;
+    transition:height  0.3s ease;
+    
+}
+
+.confirm_btn{
+    background-color: #ef2709;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: small;
+    width: 70px; 
+    height: 25px; 
+    text-align: center;
+    text-decoration: none;
+}
+.confirm_btn:hover{
+    background-color: #b30404;
+    transition: background-color 0.3s ease-out;
+}
+.cancel_btn{ 
+    background-color: #e3bf0b;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: small;
+    width: 70px; 
+    height: 25px; 
+    text-align: center;
+    text-decoration: none;
+}
+.cancel_btn:hover{
+    background-color: #0c8103;
+    transition: background-color 0.3s ease-in;
+}
+.btn_container {
+     display: flex;/* Use flexbox to align elements horizontally */
+    justify-content:space-between;/* Spread the elements to the start and end of the container */
+}

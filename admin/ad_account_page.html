@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charsset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Laundary</title>
+    <!-- Linking header CSS file -->
+    <link rel="stylesheet" type="text/css" href="ad_index.css">
+    <link rel="stylesheet" type="text/css" href="ad_caurosel.css">
+    <link rel="stylesheet" type="text/css" href="ad_account_page.css">
+    <script src="ad_change_address.js"></script>
+    <script src="ad_change_password.js"></script>
+    <script src="ad_change_email.js"></script>
+    <script src="ad_change_adminname.js"></script>
+
+</head>
+<body>
+
+    <div class="full_body">
+   <div class="header">
+      <div class="logo">
+         <img class="logo" src="media/logo1.png">
+      </div>
+
+      <div class="navigation">
+
+         <div class="option">
+           <a href="/smart laundary/index.html">LogOut</a>
+         </div>
+         <div class="option">
+           <a href="ad_home.html">Back</a>
+         </div>
+         
+
+      </div><!--Navigation menu ends here-->
+   </div><!--End of header div-->
+    
+
+      <div class="user_actions_body">
+        <div class="user_options">
+         <a href="ad_change_username.html"class="user_option_btn">Change Name</a>
+         <a href="ad_change_email.html"class="user_option_btn">Change Email</a>
+         <a href="ad_change_password.html"class="user_option_btn">Change Password</a>
+         <a href="ad_change_phone.html"class="user_option_btn">Change Phone no.</a>
+         <a style="background-color: #fa591f;" 
+         href="ad_delete_account.html" class="delete_account_btn" 
+         onmouseover="this.style.backgroundColor='#b60c0c';"
+          onmouseout="this.style.backgroundColor='#fa591f';">Leave Admin Panel
+         </a>
+      </div>
+
+        <div class="user_info_section">
+         <div class="user_info_container">
+            <p> <!-- This is where the user information will be displayed -->
+               <h2>Admin Details</h2>
+               <p> Name:<?php echo $admin_data['name']; ?></p>
+               <p> Admin Id:<?php echo $admin_data['id']; ?></p>
+               <p >Email: <?php echo $admin_data['email']; ?></p>
+               <p >Phone: <?php echo $admin_data['phone']; ?></p>
+               <!-- <p >Address: <?php echo $admin_data['address']; ?></p> -->
+            </p>
+
+         </div>
+        </div>
+        
+
+      </div>
+
+      <div class="footer">
+         <p class="copyright"> © Copyright</p> 
+      </div>
+    </div>
+
+
+
+      <script src="caurosel.js"></script>
+   </body>
+
+</html>

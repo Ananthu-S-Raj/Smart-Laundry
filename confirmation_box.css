@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 25%;
+    border-radius: 13px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #39A7FF;
+    cursor: pointer;
+}
+
+/* .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+} */
+
+.close:hover,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal p{
+    color: #39A7FF;
+  font-weight: bolder;
+  font-family:'Roboto', sans-serif;
+}
+.yes-btn , .no-btn{
+    color: white;
+    height: 22px;
+    width: 70px;
+    margin-left: 11px;
+    margin-right: 11px;
+    border: none;
+    border-radius: 11px;
+    font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+}
+.yes-btn{
+    background-color:  #00FF00;
+}
+ .no-btn{
+   background-color:#FFC436;
+}
+
+.yes-btn:hover{
+    background-color:  #08c008;
+}
+ .no-btn:hover{
+   background-color:#bb870e;
+}
+.yes-btn:hover , .no-btn:hover{
+    transform: scale(1.1);
+    transition: ease-in-out .5s;
+}

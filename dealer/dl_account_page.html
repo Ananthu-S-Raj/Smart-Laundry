@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charsset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Smart Laundary</title>
+   <!-- Linking header CSS file -->
+   <link rel="stylesheet" type="text/css" href="dl_index.css">
+   <link rel="stylesheet" type="text/css" href="dl_caurosel.css">
+   <link rel="stylesheet" type="text/css" href="dl_account_page.css">
+   <script src="dl_change_address.js"></script>
+   <script src="dl_change_password.js"></script>
+   <script src="dl_change_adminname.js"></script>
+
+</head>
+
+<body>
+
+   <div class="full_body">
+      <div class="header">
+         <div class="logo">
+            <img class="logo" src="media/logo1.png">
+         </div>
+
+         <div class="navigation">
+            <div class="option">
+               <a href="dl_home.html">Back</a>
+            </div>
+            <div class="option">
+               <a href="/smart laundry/">LogOut</a>
+            </div>
+
+
+
+         </div><!--Navigation menu ends here-->
+      </div><!--End of header div-->
+
+      <div class="user_actions_body">
+         <div class="user_options">
+            <a href="dl_change_companyname.html" class="user_option_btn">Change company name</a>
+            <a href="dl_change_adminname.html" class="user_option_btn">Change admin name</a>
+            <a href="dl_update_machinecount.html" class="user_option_btn">Update machine count</a>
+            <a href="dl_update_pricing.html" class="user_option_btn">Update pricing </a>
+            <a href="dl_change_email.html" class="user_option_btn">Change email</a>
+            <a href="dl_change_address.html" class="user_option_btn">Change address</a>
+            <a href="dl_change_phone.html" class="user_option_btn">Change phone no.</a>
+            <a href="dl_change_password.html" class="user_option_btn">Change password</a>
+            <a style="background-color: #fa591f;" href="dl_delete_account.html" class="delete_account_btn"
+               onmouseover="this.style.backgroundColor='#b60c0c';"
+               onmouseout="this.style.backgroundColor='#fa591f';">Delete Account
+            </a>
+         </div>
+
+         <div class="user_info_section">
+            <div class="user_info_container">
+               <p> <!-- This is where the user information will be displayed -->
+               <p><span style="font-weight: bolder; font-size: x-large; color: rgb(133, 6, 6);">Hello,</span>
+                  <?php echo $dealer_data['company_name']; ?>
+               </p>
+               <p> Admin Name:
+                  <?php echo $dealer_data['name']; ?>
+               </p>
+               <p> Machine count:
+                  <?php echo $dealer_data['machine_count']; ?>
+               </p>
+               <p> Company Id:
+                  <?php echo $dealer_data['id']; ?>
+               </p>
+               <p> Pricing: ₹
+                  <?php echo $dealer_data['pricing']; ?> /kg
+               </p>
+               <p>Email:
+                  <?php echo $dealer_data['email']; ?>
+               </p>
+               <p>Phone:
+                  <?php echo $dealer_data['phone']; ?>
+               </p>
+               <p>Address:
+                  <?php echo $dealer_data['address']; ?>
+               </p>
+               <!-- <p >Address: <?php echo $admin_data['address']; ?></p> -->
+               </p>
+
+            </div>
+         </div>
+
+
+      </div>
+
+      <div class="footer">
+         <p class="copyright"> © Copyright</p>
+      </div>
+   </div>
+
+
+
+   <script src="caurosel.js"></script>
+</body>
+
+</html>

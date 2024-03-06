@@ -1,0 +1,103 @@
+.main-background {
+    background-image: linear-gradient(to bottom right, #e2eff5, #80b3ff);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c8103; /* Main background color */
+  }
+  
+  .data-field {
+    margin-top: 35px;
+    margin-bottom: 100px;
+    width: 90%;
+    min-height: 90%;
+    height: auto;
+    background-color: rgb(202, 249, 212); /* Data field background color */
+    border: 1px solid white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .end {
+    height: 120px;
+    margin-top: 50px;
+  }
+  /* Your other styles go here */
+  
+.heading{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  margin-bottom: 10%;
+  /* background-color: #0c8103; */
+}
+
+.heading-note {
+  margin-top: 35px;
+  color: #39A7FF;
+  font-weight: bolder;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: -22px;
+  font-size: 22px;
+  text-decoration: underline dotted #39A7FF;
+}
+th{
+    background-color: #b1b4b1;
+    border:2 px solid #0c8103;
+    padding: 10px; /* Header cell padding */
+    text-align: center; /* Center header text */
+    height: 20px;
+    width: 180px;
+}
+td{
+    background-color: #fafffa;
+    text-align: center;
+    height: fit-content;
+    width: 180px;
+}
+.search-txt{
+  color: #6528F7;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+
+}
+.search-input {
+  border-radius: 5px;
+  height: 22px;
+  border: 1px solid #39A7FF;
+  padding-top:2px;
+}
+
+.search-btn{
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 20%;
+  border:2px solid rgb(0, 255, 51);
+  background-color: #ffffff;
+  color: #6528F7;
+}
+.search-btn:hover, #search-icon:hover{
+  cursor: pointer;
+  background-color:  #6528F7;
+  border-radius: 20%;
+  color: #ffffff;
+  transition: ease-in .2s;
+  border:2px solid #6528F7;
+
+
+}
+#search-icon{
+  font-size:17px;
+}
+.end_note{
+  font-size: larger;
+  font-weight: bolder;
+  color: #0c8103;
+  font-family: 'Nova Square', sans-serif;
+}
+

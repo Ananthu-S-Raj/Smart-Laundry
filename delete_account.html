@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Laundary</title>
+    <!-- Linking header CSS file -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="caurosel.css">
+    <link rel="stylesheet" type="text/css" href="delete_account.css">
+    <script src="change_username.js"></script>
+   </head>
+
+<body>
+<div>
+   <div class="header">
+      <div class="logo">
+         <img class="logo" src="media/logo1.png">
+      </div>
+
+      <div class="navigation">
+
+         <div class="option">
+           <a href="home.html">Home</a>
+         </div>
+         <div class="option">
+           <a href="user_info.php">Back</a>
+         </div>
+
+
+      </div><!--Navigation menu ends here-->
+   </div><!--End of header div-->
+   <div class="field_background">
+    <div class="form_field">
+        <form action="delete_account.php" method="POST" onsubmit="return delete_error();">
+            <div class="heading" >
+                <label class="heading_note">Delete Account</label>
+            </div>
+            <div class="warning">
+               <span class="warning-sign">&#9888;</span><br>
+               <label class="warning-note">Deleting account will removes your entire data.<br>This action can't be undone.</label>
+            </div>
+            <input class="placeholder_input" id="form_user_id" name="form_user_id" type="text" placeholder="User id" required autocomplete="off"><br>
+            <input class="placeholder_input" id="form_email_id" name="form_email_id" type="email" placeholder="Email" required autocomplete="off"><br>
+            <input class="placeholder_input" id="form_password" name="form_password" type="password" placeholder="Enter Password" required autocomplete="off"><br><br><br>
+            <div class="btn_container">
+
+                <input class="cancel_btn" type="button" value="Cancel" onclick="back_to_profile()">
+                <input class="confirm_btn" type="submit" value="Confirm">
+            </div>
+            
+        </form>
+       
+
+    </div>
+   </div>
+      <div class="footer">
+         <p class="copyright">© Copyright</p> 
+      </div>
+
+    </div>
+    <script src="delete_account.js"></script>
+
+      <script src="caurosel.js"></script>
+   </body>
+
+</html>

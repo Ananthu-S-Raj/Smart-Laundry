@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Laundary</title>
+    <!-- Linking header CSS file -->
+    <link rel="stylesheet" type="text/css" href="c_index.css">
+    <link rel="stylesheet" type="text/css" href="caurosel.css">
+    <link rel="stylesheet" type="text/css" href="c_settings.css">
+   </head>
+ 
+<body>
+<div>
+   <div class="header">
+      <div class="logo">
+         <img class="logo" src="media/logo1.png">
+      </div>
+
+      <div class="navigation">
+
+
+         <div class="option">
+           <a href="c_info.php">Back</a>
+         </div>
+
+
+      </div><!--Navigation menu ends here-->
+   </div><!--End of header div-->
+   <div class="field_background">
+    <div class="form_field">
+        <form action="c_delete_account.php" method="POST" onsubmit="return delete_error();">
+            <div class="heading" >
+                <label class="heading_note">Delete Account</label>
+            </div>
+            <input class="placeholder_input" id="courier_id" name="courier_id" type="text" placeholder="Your id" required autocomplete="off"><br>
+            <input class="placeholder_input" id="courier_email_id" name="courier_email_id" type="email" placeholder="Email" required autocomplete="off"><br>
+            <input class="placeholder_input" id="form_password" name="form_password" type="password" placeholder="Enter Password" required autocomplete="off"><br><br><br>
+            <div class="btn_container">
+
+                <input class="cancel_btn" type="button" value="Cancel" onclick="back()">
+                <input class="confirm_btn" type="submit" value="Confirm">
+            </div>
+            
+        </form>
+       
+
+    </div>
+   </div>
+      <div class="footer">
+         <p class="copyright">© Copyright</p> 
+      </div>
+
+    </div>
+    <script src="c_delete_account.js"></script>
+
+      <script src="caurosel.js"></script>
+   </body>
+
+</html>
