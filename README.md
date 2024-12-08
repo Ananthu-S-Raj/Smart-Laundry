@@ -1,0 +1,1 @@
+Description: A laundry management website enabling users to choose laundry agents, book or cancel slots, track orders, and more. Agents can manage orders, update statuses, and perform related actions.
